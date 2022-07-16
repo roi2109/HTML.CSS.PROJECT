@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>צרו קשר</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <script
+    defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <img class="hulon" src="/images/logo.png" alt="hulon" />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Index.html"
+                  >עמוד הבית</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">אודות</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">גלריה</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">צרו קשר</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form style="height:700px;" >
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">שם פרטי</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">שם משפחה</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <label for="exampleInputPassword1" class="form-label"> כתובת אימייל</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputPassword1"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">שאלות?</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+      <div class="mb-3 form-check">
+        <input
+          type="checkbox"
+          class="form-check-input checkbox"
+          id="exampleCheck1"
+        />
+        <label class="form-check-label" for="exampleCheck1">תשלחו לי עדכונים לאימייל</label>
+      </div>
+      <button type="submit" class="btn btn-primary">שלח!</button>
+    </form>
+    <footer class="mt-5 text-center">
+      <div class="footer">
+        <a href="https://github.com/roi2109" target="_blank"
+          ><img class="footerimg" src="images/github.png" alt="github"
+        /></a>
+
+        <a href="https://www.instagram.com/temporx2109/" target="_blank"
+          ><img class="footerimg" src="images/instagram.png" alt="instagram-logo"
+        /></a>
+      </div>
+      <p class="copyright"><span>&copy;</span> 2022 Roi Gal</p>
+    </footer>
+  </body>
+</html>

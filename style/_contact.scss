@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+$headersFont: Pattaya;
+$textFont: Rubik;
+$mainColor: #8cbf3f;
+body {
+  background-color: #f2f2f2;
+}
+a {
+  font-family: $headersFont;
+}
+.head {
+  background-color: $mainColor;
+}
+.hulon {
+  width: 50%;
+}
+.form-control {
+  width: 35% !important;
+}
