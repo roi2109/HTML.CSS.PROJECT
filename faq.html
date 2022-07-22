@@ -21,13 +21,11 @@
   </head>
   <body>
     <header class="head">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg head d-none d-sm-block">
+        <img class="hulon" src="./images/logo.png" alt="hulon" />
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <img class="hulon" src="./images/logo.png" alt="hulon" />
-              </li>
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -52,9 +50,69 @@
           </div>
         </div>
       </nav>
+      <nav class="navbar bg-light fixed-top d-sm-none d-block">
+        <div class="container-fluid">
+          <img class="hulon" src="./images/logo.png" alt="hulon" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                תפריט ניווט
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >עמוד הבית</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">אודות</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">גלריה</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">צרו קשר</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div
+        class="accordion accordion-flush"
+        style="height: 400px"
+        id="accordionFlushExample"
+      >
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
             <button
@@ -164,12 +222,12 @@
             aria-labelledby="flush-headingFive"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body bg-danger">תשובה</div>
+            <div class="accordion-body">תשובה</div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="mt-5 text-center">
+    <footer class="text-center" style="margin-top: 100px">
       <div class="footer">
         <a href="https://github.com/roi2109" target="_blank"
           ><img class="footerimg" src="images/github.png" alt="github"

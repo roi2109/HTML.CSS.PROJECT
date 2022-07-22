@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="style/main.css" />
     <script
-    defer
+      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
@@ -21,13 +21,11 @@
   </head>
   <body>
     <header class="head">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg head d-none d-sm-block">
+        <img class="hulon" src="./images/logo.png" alt="hulon" />
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <img class="hulon" src="./images/logo.png" alt="hulon" />
-              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html"
                   >עמוד הבית</a
@@ -49,44 +47,137 @@
           </div>
         </div>
       </nav>
+      <nav class="navbar bg-light fixed-top d-sm-none d-block">
+        <div class="container-fluid">
+          <img class="hulon" src="./images/logo.png" alt="hulon" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                תפריט ניווט
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >עמוד הבית</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">אודות</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html">גלריה</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">צרו קשר</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <form style="height:700px;" >
+    <form
+      style="height: 700px"
+      action="https://formspree.io/f/xwkygnap"
+      method="POST"
+      name="my-form"
+    >
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">שם פרטי</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">שם משפחה</label>
+        <div class="d-none d-sm-block">
+          <label for="exampleInputEmail1" class="form-label">שם פרטי</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            name="name"
+          />
+        </div>
         <input
           type="text"
-          class="form-control"
-          id="exampleInputPassword1"
+          class="form-control d-sm-none"
+          id="exampleInputEmail1"
+          placeholder="שם פרטי"
+          name="name"
         />
       </div>
-      <label for="exampleInputPassword1" class="form-label"> כתובת אימייל</label>
-      <input
-        type="email"
-        class="form-control"
-        id="exampleInputPassword1"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">שאלות?</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+
+      <div class="mb-3">
+        <div class="d-none d-sm-block">
+          <label for="exampleInputPassword1" class="form-label">שם משפחה</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="last-name"
+          />
+        </div>
+
+        <input
+          type="text"
+          class="form-control d-sm-none"
+          id="exampleInputPassword1"
+          placeholder="שם משפחה"
+          name="last-name"
+        />
+      </div>
+      <div class="mb-3">
+        <div class="d-none d-sm-block">
+          <label class="form-label"> כתובת אימייל</label>
+          <input type="text" class="form-control" />
+        </div>
+        <input
+          type="text"
+          class="form-control d-sm-none"
+          placeholder="כתובת אימייל"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >שאלות?</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
       <div class="mb-3 form-check">
         <input
           type="checkbox"
           class="form-check-input checkbox"
           id="exampleCheck1"
         />
-        <label class="form-check-label" for="exampleCheck1">תשלחו לי עדכונים לאימייל</label>
+        <label class="form-check-label" for="exampleCheck1"
+          >תשלחו לי עדכונים לאימייל</label
+        >
       </div>
       <button type="submit" class="btn btn-primary">שלח!</button>
     </form>
@@ -97,7 +188,10 @@
         /></a>
 
         <a href="https://www.instagram.com/temporx2109/" target="_blank"
-          ><img class="footerimg" src="images/instagram.png" alt="instagram-logo"
+          ><img
+            class="footerimg"
+            src="images/instagram.png"
+            alt="instagram-logo"
         /></a>
       </div>
       <p class="copyright"><span>&copy;</span> 2022 Roi Gal</p>

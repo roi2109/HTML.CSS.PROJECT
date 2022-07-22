@@ -155,7 +155,9 @@ pre {
 }
 
 .hulon {
-  width: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
 }
 
 .card-title,
@@ -167,4 +169,10 @@ pre {
   position: relative;
   top: 5%;
   right: 20%;
+}
+
+.hamburger {
+  position: absolute;
+  left: 5px;
+  top: 10px;
 }/*# sourceMappingURL=main.css.map */
